@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="services.html">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="product.html">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Responsive bottom navigation</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="images/logo-removebg-preview.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">
+                            <i class='bx bx-book-alt nav__icon'></i>
+                            <span class="nav__name">Features</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="product.html" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            <span class="nav__name">Product</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link active-link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+                            <span class="nav__name">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <img src="images/logo-removebg-preview.png" alt="" class="nav__img"> -->
+        </nav>
+    </header>
+
+    <section id="section-wrapper">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">Fill up the form and our Team will get back to you within 24 hours</h3>
+                <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span class="tlm">Phone:</span> <a class="tlm" href="tel:+92 312 257 0269">+92 312 257 0269</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="tlm">Email:</span> <a class="tlm" href="mailto:wasifali42401@gmail.com">wasif-gfx@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <span class="tlm">Website:</span> <a class="tlm" href="#">wasif.com</a>
+                    </li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="form-wrap">
+                <form action="#" method="POST">
+                    <h2 class="form-title">Send us a message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="fname" placeholder="First Name" maxlength="20" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="lname" placeholder="Last Name" maxlength="20" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="email" placeholder="Mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="phone" placeholder="Phone" maxlength="11" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" placeholder="Write your message" required></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="app.js"></script>
+</body>
+
+</html>
